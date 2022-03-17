@@ -9,8 +9,16 @@
 /.github                 export-ignore
 /.gitignore              export-ignore
 /.php-cs-fixer.dist.php  export-ignore
+/.styleci.yml            export-ignore
+/app                     export-ignore
+/bootstrap               export-ignore
 /box.json                export-ignore
+/config                  export-ignore
+/composer.lock           export-ignore
 /docs                    export-ignore
 /phpstan.neon.dist       export-ignore
 /phpunit.xml.dist        export-ignore
+/resources               export-ignore
+/rugby-schedule          export-ignore
+/storage                 export-ignore
 /tests                   export-ignore
