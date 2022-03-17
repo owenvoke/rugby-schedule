@@ -3,6 +3,7 @@
         "app",
         "bootstrap",
         "config",
+        "resources",
         "vendor"
     ],
     "files": [
