@@ -1,6 +1,7 @@
 @php
     /** @var Sabre\VObject\Component\VCalendar $feed */
     /** @var bool $includePast */
+    /** @var string $feedName */
 @endphp
 
 <div class="ml-2 my-1">
