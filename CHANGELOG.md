@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## v1.0.2 - 2022-03-17
+
+### Added
+- Add titles for all commands ([#2](https://github.com/owenvoke/rugby-schedule/pull/2))
+
+### Changed
+- Standardise the format for descriptions ([536f1e9](https://github.com/owenvoke/rugby-schedule/commit/536f1e9a831969b180079fbca0d5b6982df6a71b))
+
 ## v1.0.1 - 2022-03-17
 
 ### Fixed
