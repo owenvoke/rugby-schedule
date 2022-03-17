@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Console\Scheduling\ScheduleRunCommand;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
 use Symfony\Component\Console\Command\Command;
