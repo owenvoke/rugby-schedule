@@ -12,6 +12,11 @@ class PremiershipCommand extends ScheduleCommand
     /** {@inheritdoc} */
     protected $description = 'View the Premiership schedule';
 
+    protected function getFeedName(): string
+    {
+        return 'Gallagher Premiership Cup';
+    }
+
     protected function getFeedUrl(): string
     {
         return sprintf(

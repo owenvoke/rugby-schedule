@@ -4,6 +4,10 @@
 @endphp
 
 <div class="ml-2 my-1">
+    <dl class="pb-1">
+        <dt>{{ config('app.name') }} - {{ $feedName }}</dt>
+    </dl>
+
     <table style="box">
         <thead>
         <tr>

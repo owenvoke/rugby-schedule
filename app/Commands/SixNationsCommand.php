@@ -12,6 +12,11 @@ class SixNationsCommand extends ScheduleCommand
     /** {@inheritdoc} */
     protected $description = 'View the Six Nations schedule';
 
+    protected function getFeedName(): string
+    {
+        return 'Six Nations';
+    }
+
     protected function getFeedUrl(): string
     {
         return sprintf(
