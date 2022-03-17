@@ -16,6 +16,7 @@
             <th>Teams</th>
             <th>Location</th>
             <th>Date</th>
+            <th>Add to Calendar</th>
         </tr>
         </thead>
         @if (isset($feed->VEVENT) && ! empty($feed->VEVENT))
@@ -33,6 +34,9 @@
                         </td>
                         <td>
                             <span>{{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->format('D jS M Y') }} ({{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->longRelativeToNowDiffForHumans() }})</span>
+                        </td>
+                        <td>
+                            <a href="{{ google_calendar_event($event) }}">Google</a>
                         </td>
                     </tr>
                 @endif
