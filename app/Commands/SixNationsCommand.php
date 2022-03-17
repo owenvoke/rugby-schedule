@@ -23,13 +23,13 @@ class SixNationsCommand extends ScheduleCommand
     private function getTeamFromOption(): string
     {
         return match (strtolower($this->argument('team'))) {
-            '' => '',
             'england' => '125',
             'ireland' => '126',
             'scotland' => '127',
             'wales' => '128',
             'france' => '129',
             'italy' => '130',
+            default => '',
         };
     }
 }
