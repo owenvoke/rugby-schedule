@@ -19,6 +19,11 @@ abstract class ScheduleCommand extends Command
         render(view('feed', compact('includePast', 'feed', 'feedName')));
     }
 
+    public function getDescription(): string
+    {
+        return "View the {$this->getFeedName()} schedule";
+    }
+
     abstract protected function getFeedUrl(): string;
 
     abstract protected function getFeedName(): string;

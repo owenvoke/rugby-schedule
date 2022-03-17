@@ -9,9 +9,6 @@ class PremiershipCommand extends ScheduleCommand
     /** {@inheritdoc} */
     protected $signature = 'premiership {team? : An optional team name} {--include-past : Include past events}';
 
-    /** {@inheritdoc} */
-    protected $description = 'View the Premiership schedule';
-
     protected function getFeedName(): string
     {
         return 'Gallagher Premiership Cup';

@@ -9,9 +9,6 @@ class SixNationsCommand extends ScheduleCommand
     /** {@inheritdoc} */
     protected $signature = 'six-nations {team? : An optional team name} {--include-past : Include past events}';
 
-    /** {@inheritdoc} */
-    protected $description = 'View the Six Nations schedule';
-
     protected function getFeedName(): string
     {
         return 'Six Nations';

@@ -9,9 +9,6 @@ class EuropeanChampionsCommand extends ScheduleCommand
     /** {@inheritdoc} */
     protected $signature = 'european-champions {--include-past : Include past events}';
 
-    /** {@inheritdoc} */
-    protected $description = 'View the European Champions Cup schedule';
-
     protected function getFeedName(): string
     {
         return 'European Champions Cup';
