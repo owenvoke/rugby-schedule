@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Console\Scheduling\ScheduleRunCommand;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
+use Symfony\Component\Console\Command\Command;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +16,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        collect(Artisan::all())->each(function (Command $command) {
+            if (in_array($command::class, config('commands.hidden', []), true)) {
+                $command->setHidden(true);
+            }
+        });
     }
 
     /**
