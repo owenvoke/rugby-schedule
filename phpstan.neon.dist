@@ -4,3 +4,8 @@ parameters:
     level: 6
     paths:
         - app
+        - config
+    ignoreErrors:
+        - message: '#^Access to an undefined property Sabre\\VObject\\Component\\VEvent\:\:\$(SUMMARY|DTSTART|DTEND|URL|LOCATION)\.$#'
+          path: app/helpers.php
+          count: 12

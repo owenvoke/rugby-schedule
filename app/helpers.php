@@ -42,12 +42,12 @@ if (! function_exists('google_calendar_event')) {
     function google_calendar_event(VEvent $event): string
     {
         return Link::create(
-            str($event->SUMMARY->getValue())->before(','), // @phpstan-ignore-line
-            $event->DTSTART->getDateTime(), // @phpstan-ignore-line
-            $event->DTEND->getDateTime(), // @phpstan-ignore-line
+            str($event->SUMMARY->getValue())->before(','),
+            $event->DTSTART->getDateTime(),
+            $event->DTEND->getDateTime(),
         )
-            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue()) // @phpstan-ignore-line
-            ->address($event->LOCATION->getValue()) // @phpstan-ignore-line
+            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue())
+            ->address($event->LOCATION->getValue())
             ->google();
     }
 }
@@ -56,12 +56,12 @@ if (! function_exists('outlook_calendar_event')) {
     function outlook_calendar_event(VEvent $event): string
     {
         return Link::create(
-            str($event->SUMMARY->getValue())->before(','), // @phpstan-ignore-line
-            $event->DTSTART->getDateTime(), // @phpstan-ignore-line
-            $event->DTEND->getDateTime(), // @phpstan-ignore-line
+            str($event->SUMMARY->getValue())->before(','),
+            $event->DTSTART->getDateTime(),
+            $event->DTEND->getDateTime(),
         )
-            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue()) // @phpstan-ignore-line
-            ->address($event->LOCATION->getValue()) // @phpstan-ignore-line
+            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue())
+            ->address($event->LOCATION->getValue())
             ->webOutlook();
     }
 }
