@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.2.0 - 2022-03-18](https://github.com/owenvoke/rugby-schedule/compare/v1.1.0...v1.2.0)
+
+### Added
+- Add links to add events to Google and Outlook calendars ([#1](https://github.com/owenvoke/rugby-schedule/pull/1))
+
 ## [v1.1.0 - 2022-03-18](https://github.com/owenvoke/rugby-schedule/compare/v1.0.2...v1.1.0)
 
 ### Added
