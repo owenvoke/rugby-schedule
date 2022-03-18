@@ -17,7 +17,7 @@
             <th>Teams</th>
             <th>Location</th>
             <th>Date</th>
-            @if ($supportsTerminalHyperlinks)
+            @if ($includeCalendarLinks)
                 <th>Add to Calendar</th>
             @endif
         </tr>
@@ -38,7 +38,7 @@
                         <td>
                             <span>{{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->format('H:i D jS M Y') }} ({{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->shortRelativeToNowDiffForHumans() }})</span>
                         </td>
-                        @if ($supportsTerminalHyperlinks)
+                        @if ($includeCalendarLinks)
                             <td>
                                 <span>
                                     <a href="{{ google_calendar_event($event) }}">Google</a>
@@ -52,7 +52,7 @@
             @endforeach
         @else
             <tr>
-                @if ($supportsTerminalHyperlinks)
+                @if ($includeCalendarLinks)
                     <td colspan="5">No events were found for the specified schedule.</td>
                 @else
                     <td colspan="4">No events were found for the specified schedule.</td>

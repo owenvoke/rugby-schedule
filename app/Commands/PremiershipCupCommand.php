@@ -7,7 +7,8 @@ use App\Contracts\ScheduleCommand;
 class PremiershipCupCommand extends ScheduleCommand
 {
     /** {@inheritdoc} */
-    protected $signature = 'premiership-cup {--include-past : Include past events}';
+    protected $signature = 'premiership-cup {--p|include-past : Include past events}
+                                            {--c|include-calendar-links : Include calendar links}';
 
     protected function getFeedName(): string
     {

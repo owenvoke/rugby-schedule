@@ -7,7 +7,9 @@ use App\Contracts\ScheduleCommand;
 class SixNationsCommand extends ScheduleCommand
 {
     /** {@inheritdoc} */
-    protected $signature = 'six-nations {team? : An optional team name} {--include-past : Include past events}';
+    protected $signature = 'six-nations {team? : An optional team name}
+                                        {--p|include-past : Include past events}
+                                        {--c|include-calendar-links : Include calendar links}';
 
     protected function getFeedName(): string
     {
