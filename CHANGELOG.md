@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.3.0 - 2022-03-18](https://github.com/owenvoke/rugby-schedule/compare/v1.2.0...v1.3.0)
+
+### Added
+- Add European Challenge Cup command ([1cb8f51](https://github.com/owenvoke/rugby-schedule/commit/1cb8f51da99faf7eaf01ce918cdcab8e2666d85e))
+- Add Women's Six Nations command ([45a0c2d](https://github.com/owenvoke/rugby-schedule/commit/45a0c2d59d3b35464bc7a538b988f6c943fbfb5c))
+
 ## [v1.2.0 - 2022-03-18](https://github.com/owenvoke/rugby-schedule/compare/v1.1.0...v1.2.0)
 
 ### Added
