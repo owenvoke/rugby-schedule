@@ -21,7 +21,23 @@ composer global require owenvoke/rugby-schedule
 
 ## Usage
 
-See the output of `rugby-schedule` for available commands and their usage.
+The following tournament commands are available:
+
+#### Men's Rugby
+
+- `european-challenge` - [The European Challenge Cup](https://epcrugby.com/challenge-cup)
+- `european-champions` - [The European Champions Cup](https://epcrugby.com)
+- `premiership` - [The Gallagher Premiership](https://premiershiprugby.com/gallagher-premiership)
+- `premiership-cup` - [The Gallagher Premiership Cup](https://premiershiprugby.com/premiership-rugby-cup)
+- `premiership-sevens` - The Gallagher Premiership 7s
+- `premiership-shield` - [The Gallagher Premiership Shield](https://premiershiprugby.com/premiership-rugby-shield)
+- `six-nations` - [Six Nations](https://sixnationsrugby.com)
+
+#### Women's Rugby
+
+- `womens:six-nations` - [Women's Six Nations](https://womens.sixnationsrugby.com)
+
+See the output of `rugby-schedule` for all available commands and their usage, or use `--help` to display extended usage information for a specific command.
 
 ## Change log
 
