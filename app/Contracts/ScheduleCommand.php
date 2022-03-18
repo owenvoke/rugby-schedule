@@ -15,8 +15,9 @@ abstract class ScheduleCommand extends Command
         $includePast = $this->option('include-past') ?: false;
         $feed = Reader::read(Http::get($this->getFeedUrl())->body());
         $feedName = $this->getFeedName();
+        $supportsTerminalHyperlinks = supports_terminal_hyperlinks();
 
-        render(view('feed', compact('includePast', 'feed', 'feedName')));
+        render(view('feed', compact('includePast', 'feed', 'feedName', 'supportsTerminalHyperlinks')));
     }
 
     public function getDescription(): string
