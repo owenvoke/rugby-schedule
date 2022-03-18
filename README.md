@@ -7,7 +7,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Buy us a tree][ico-treeware-gifting]][link-treeware-gifting]
 
-**Rugby Schedule** is a command-line tool that keeps you up to date with rugby cup schedules.
+**Rugby Schedule** is a command-line tool that keeps you up to date with rugby tournament schedules.
 
 ## Install
 
@@ -20,6 +20,8 @@ composer global require owenvoke/rugby-schedule
 ```
 
 ## Usage
+
+### Tournaments
 
 The following tournament commands are available:
 
@@ -42,6 +44,16 @@ The following tournament commands are available:
 - `u20s:six-nations` - [Under-20 Six Nations](https://u20.sixnationsrugby.com)
 
 See the output of `rugby-schedule` for all available commands and their usage, or use `--help` to display extended usage information for a specific command.
+
+### Viewing Calendar Links
+
+You can view available calendar links (e.g. Google Calendar, Outlook Calendar) that allow you to add an event to your calendar.
+
+To do this, include the `--include-calendar-links` (or `-c`) flag when calling a command.
+
+### Viewing Past Matches
+
+By default, past matches are excluded from the output. These can be included if necessary by using the `--include-past` (or `-p`) flag when calling a command.
 
 ## Change log
 
