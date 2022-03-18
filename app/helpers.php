@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Env;
 use Sabre\VObject\Component\VEvent;
+use Spatie\CalendarLinks\Link;
 
 if (! function_exists('supports_terminal_hyperlinks')) {
     function supports_terminal_hyperlinks(): bool
@@ -40,13 +41,27 @@ if (! function_exists('supports_terminal_hyperlinks')) {
 if (! function_exists('google_calendar_event')) {
     function google_calendar_event(VEvent $event): string
     {
-        return sprintf(
-            'https://calendar.google.com/calendar/r/eventedit?text=%s&dates=%s/%s&details=%s&location=%s',
-            urlencode(str($event->SUMMARY->getValue())->before(',')), // @phpstan-ignore-line
-            urlencode($event->DTSTART->getValue()), // @phpstan-ignore-line
-            urlencode($event->DTEND->getValue()), // @phpstan-ignore-line
-            urlencode(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue()), // @phpstan-ignore-line
-            urlencode($event->LOCATION->getValue()), // @phpstan-ignore-line
-        );
+        return Link::create(
+            str($event->SUMMARY->getValue())->before(','), // @phpstan-ignore-line
+            $event->DTSTART->getDateTime(), // @phpstan-ignore-line
+            $event->DTEND->getDateTime(), // @phpstan-ignore-line
+        )
+            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue()) // @phpstan-ignore-line
+            ->address($event->LOCATION->getValue()) // @phpstan-ignore-line
+            ->google();
+    }
+}
+
+if (! function_exists('outlook_calendar_event')) {
+    function outlook_calendar_event(VEvent $event): string
+    {
+        return Link::create(
+            str($event->SUMMARY->getValue())->before(','), // @phpstan-ignore-line
+            $event->DTSTART->getDateTime(), // @phpstan-ignore-line
+            $event->DTEND->getDateTime(), // @phpstan-ignore-line
+        )
+            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue()) // @phpstan-ignore-line
+            ->address($event->LOCATION->getValue()) // @phpstan-ignore-line
+            ->webOutlook();
     }
 }

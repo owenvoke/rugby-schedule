@@ -13,7 +13,8 @@
         "laravel-zero/framework": "^9.0",
         "nunomaduro/larastan": "^2.1",
         "nunomaduro/termwind": "^1.6.2",
-        "sabre/vobject": "^4.4"
+        "sabre/vobject": "^4.4",
+        "spatie/calendar-links": "^1.7"
     },
     "autoload": {
         "psr-4": {

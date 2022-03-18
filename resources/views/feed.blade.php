@@ -36,11 +36,15 @@
                             <span>{{ $event->LOCATION->getValue() }}</span>
                         </td>
                         <td>
-                            <span>{{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->format('D jS M Y') }} ({{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->longRelativeToNowDiffForHumans() }})</span>
+                            <span>{{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->format('H:i D jS M Y') }} ({{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->shortRelativeToNowDiffForHumans() }})</span>
                         </td>
                         @if ($supportsTerminalHyperlinks)
                             <td>
-                                <a href="{{ google_calendar_event($event) }}">Google</a>
+                                <span>
+                                    <a href="{{ google_calendar_event($event) }}">Google</a>
+                                    <span> </span>
+                                    <a href="{{ outlook_calendar_event($event) }}">Outlook</a>
+                                </span>
                             </td>
                         @endif
                     </tr>
