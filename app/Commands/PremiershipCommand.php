@@ -11,7 +11,7 @@ class PremiershipCommand extends ScheduleCommand
 
     protected function getFeedName(): string
     {
-        return 'Gallagher Premiership Cup';
+        return 'Gallagher Premiership';
     }
 
     protected function getFeedUrl(): string
