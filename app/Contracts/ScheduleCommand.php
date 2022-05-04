@@ -5,11 +5,9 @@ declare(strict_types=1);
 namespace App\Contracts;
 
 use App\DTOs\Event;
-use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
 use LaravelZero\Framework\Commands\Command;
-use Sabre\VObject\Component\VEvent;
 use Sabre\VObject\Reader;
 use function Termwind\render;
 
