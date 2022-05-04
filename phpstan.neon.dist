@@ -9,6 +9,3 @@ parameters:
         - message: '#^Access to an undefined property Sabre\\VObject\\Component\\VEvent\:\:\$(UID|SUMMARY|DTSTART|DTEND|URL|LOCATION)\.$#'
           path: app/
           count: 6
-        - message: '#^Access to an undefined property Sabre\\VObject\\Document\:\:\$VEVENT\.$#'
-          path: app/
-          count: 1
