@@ -8,11 +8,11 @@
         "php": "^8.0"
     },
     "require-dev": {
-        "guzzlehttp/guzzle": "^7.4",
-        "illuminate/view": "^9.5",
-        "laravel-zero/framework": "^9.0",
+        "guzzlehttp/guzzle": "^7.4.2",
+        "illuminate/view": "^9.11",
+        "laravel-zero/framework": "^9.1",
         "nunomaduro/larastan": "^2.1",
-        "nunomaduro/termwind": "^1.6.2",
+        "nunomaduro/termwind": "^1.9",
         "sabre/vobject": "^4.4",
         "spatie/calendar-links": "^1.7"
     },

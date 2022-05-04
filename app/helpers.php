@@ -1,7 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
+use App\DTOs\Event;
 use Illuminate\Support\Env;
-use Sabre\VObject\Component\VEvent;
 use Spatie\CalendarLinks\Link;
 
 if (! function_exists('supports_terminal_hyperlinks')) {
@@ -39,29 +41,29 @@ if (! function_exists('supports_terminal_hyperlinks')) {
 }
 
 if (! function_exists('google_calendar_event')) {
-    function google_calendar_event(VEvent $event): string
+    function google_calendar_event(Event $event): string
     {
         return Link::create(
-            str($event->SUMMARY->getValue())->before(','),
-            $event->DTSTART->getDateTime(),
-            $event->DTEND->getDateTime(),
+            $event->summary,
+            $event->startDate,
+            $event->endDate,
         )
-            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue())
-            ->address($event->LOCATION->getValue())
+            ->description($event->summary.PHP_EOL.PHP_EOL.$event->url)
+            ->address($event->location)
             ->google();
     }
 }
 
 if (! function_exists('outlook_calendar_event')) {
-    function outlook_calendar_event(VEvent $event): string
+    function outlook_calendar_event(Event $event): string
     {
         return Link::create(
-            str($event->SUMMARY->getValue())->before(','),
-            $event->DTSTART->getDateTime(),
-            $event->DTEND->getDateTime(),
+            $event->summary,
+            $event->startDate,
+            $event->endDate,
         )
-            ->description(str($event->SUMMARY->getValue())->before(',').PHP_EOL.PHP_EOL.$event->URL->getValue())
-            ->address($event->LOCATION->getValue())
+            ->description($event->summary.PHP_EOL.PHP_EOL.$event->url)
+            ->address($event->location)
             ->webOutlook();
     }
 }

@@ -1,6 +1,5 @@
 @php
-    /** @var Sabre\VObject\Component\VCalendar $feed */
-    /** @var bool $includePast */
+    /** @var Illuminate\Support\Collection<App\DTOs\Event> $events */
     /** @var string $feedName */
     /** @var bool $supportsTerminalHyperlinks */
 @endphp
@@ -22,33 +21,31 @@
             @endif
         </tr>
         </thead>
-        @if (isset($feed->VEVENT) && ! empty($feed->VEVENT))
-            @foreach($feed->VEVENT as $event)
-                @if ((isset($includePast) && $includePast) || Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->isAfter(now()->startOfDay()))
-                    <tr>
+        @if (! $events->isEmpty())
+            @foreach($events as $event)
+                <tr>
+                    <td>
+                        <a href="{{ $event->url }}">{{ $event->id }}</a>
+                    </td>
+                    <td>
+                        <span>{{ $event->summary }}</span>
+                    </td>
+                    <td>
+                        <span>{{ $event->location }}</span>
+                    </td>
+                    <td>
+                        <span>{{ $event->startDate->format('H:i D jS M Y') }} ({{ $event->startDate->shortRelativeToNowDiffForHumans() }})</span>
+                    </td>
+                    @if ($includeCalendarLinks)
                         <td>
-                            <a href="{{ $event->URL->getValue() }}">{{ $event->UID->getValue() }}</a>
-                        </td>
-                        <td>
-                            <span>{{ str($event->SUMMARY->getValue())->before(',') }}</span>
-                        </td>
-                        <td>
-                            <span>{{ $event->LOCATION->getValue() }}</span>
-                        </td>
-                        <td>
-                            <span>{{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->format('H:i D jS M Y') }} ({{ Illuminate\Support\Carbon::parse($event->DTSTART->getValue())->shortRelativeToNowDiffForHumans() }})</span>
-                        </td>
-                        @if ($includeCalendarLinks)
-                            <td>
                                 <span>
                                     <a href="{{ google_calendar_event($event) }}">Google</a>
                                     <span> </span>
                                     <a href="{{ outlook_calendar_event($event) }}">Outlook</a>
                                 </span>
-                            </td>
-                        @endif
-                    </tr>
-                @endif
+                        </td>
+                    @endif
+                </tr>
             @endforeach
         @else
             <tr>

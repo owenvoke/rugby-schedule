@@ -7,8 +7,8 @@ use App\Contracts\ScheduleCommand;
 class EuropeanChallengeCommand extends ScheduleCommand
 {
     /** {@inheritdoc} */
-    protected $signature = 'european-challenge {--include-past : Include past events}
-                                               {--exclude-calendars : Exclude calendar links}';
+    protected $signature = 'european-challenge {--p|include-past : Include past events}
+                                               {--c|include-calendar-links : Include calendar links}';
 
     protected function getFeedName(): string
     {
