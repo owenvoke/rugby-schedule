@@ -31,8 +31,6 @@ The following tournament commands are available:
 - `european-champions` - [The European Champions Cup](https://epcrugby.com)
 - `premiership` - [The Gallagher Premiership](https://premiershiprugby.com/gallagher-premiership)
 - `premiership-cup` - [The Gallagher Premiership Cup](https://premiershiprugby.com/premiership-rugby-cup)
-- `premiership-sevens` - The Gallagher Premiership 7s
-- `premiership-shield` - [The Gallagher Premiership Shield](https://premiershiprugby.com/premiership-rugby-shield)
 - `six-nations` - [Six Nations](https://sixnationsrugby.com)
 
 #### Women's Rugby
