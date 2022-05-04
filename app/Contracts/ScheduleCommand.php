@@ -25,7 +25,7 @@ abstract class ScheduleCommand extends Command
 
         $events = new Collection();
 
-        foreach ($feed->VEVENT as $event) {
+        foreach ($feed->VEVENT ?? [] as $event) {
             $events->push(Event::fromVEvent($event));
         }
 

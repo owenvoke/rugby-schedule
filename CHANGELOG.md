@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.4.0 - 2022-05-04](https://github.com/owenvoke/rugby-schedule/compare/v1.3.0...v1.4.0)
+
+### Changed
+- Cleaned up output of commands ([2c736ff](https://github.com/owenvoke/rugby-schedule/commit/2c736ff4df9516e039d778be8d2dd092ee8c3110))
+
+### Removed
+- Remove un-played Premiership tournaments ([2c736ff](https://github.com/owenvoke/rugby-schedule/commit/2c736ff4df9516e039d778be8d2dd092ee8c3110))
+
 ## [v1.3.0 - 2022-03-18](https://github.com/owenvoke/rugby-schedule/compare/v1.2.0...v1.3.0)
 
 ### Added
