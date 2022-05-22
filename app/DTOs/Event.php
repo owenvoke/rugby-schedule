@@ -25,7 +25,7 @@ final class Event
             id: $event->UID->getValue(),
             url: $event->URL->getValue(),
             summary: str($event->SUMMARY->getValue())->before(',')->ascii()->toString(),
-            location: $event->LOCATION->getValue(),
+            location: str($event->LOCATION->getValue())->ascii()->toString(),
             startDate: Carbon::parse($event->DTSTART->getValue()),
             endDate: Carbon::parse($event->DTEND->getValue()),
         );
