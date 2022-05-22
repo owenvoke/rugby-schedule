@@ -6,10 +6,7 @@
 ])
 <tr>
     <td>
-        <a href="{{ $event->url }}">{{ $event->id }}</a>
-    </td>
-    <td>
-        <span>{{ $event->summary }}</span>
+        <a href="{{ $event->url }}">{{ $event->summary }}</a>
     </td>
     <td>
         <span>{{ $event->location }}</span>

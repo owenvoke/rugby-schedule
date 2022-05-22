@@ -4,7 +4,6 @@ s@props([
 ])
 <thead>
 <tr>
-    <th>ID</th>
     <th>Teams</th>
     <th>Location</th>
     <th>Date</th>
