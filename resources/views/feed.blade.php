@@ -13,7 +13,7 @@
         <table style="box">
             <x-feed.event-header :include-calendar-links="$includeCalendarLinks"></x-feed.event-header>
             @foreach($events as $event)
-                <x-feed.event-row :event="$event"></x-feed.event-row>
+                <x-feed.event-row :event="$event" :include-calendar-links="$includeCalendarLinks"></x-feed.event-row>
             @endforeach
         </table>
     @else
