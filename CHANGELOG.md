@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.4.1 - 2022-07-19](https://github.com/owenvoke/rugby-schedule/compare/v1.4.0...v1.4.1)
+
+### Changed
+- Update Premiership calendar ([#7](https://github.com/owenvoke/rugby-schedule/pull/7))
+- Update to use Pint for style linting ([#8](https://github.com/owenvoke/rugby-schedule/pull/8))
+
 ## [v1.4.0 - 2022-05-04](https://github.com/owenvoke/rugby-schedule/compare/v1.3.0...v1.4.0)
 
 ### Changed
