@@ -19,7 +19,7 @@ class PremiershipCommand extends ScheduleCommand
     protected function getFeedUrl(): string
     {
         return sprintf(
-            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4304&source=sfms&project=premier&TeamId=%s',
+            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4370&source=sfms&project=premier&TeamId=%s',
             $this->getTeamFromOption()
         );
     }
