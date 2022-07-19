@@ -9,7 +9,6 @@
 /.github                 export-ignore
 /.gitignore              export-ignore
 /.php-cs-fixer.dist.php  export-ignore
-/.styleci.yml            export-ignore
 /CHANGELOG.md            export-ignore
 /app                     export-ignore
 /bootstrap               export-ignore

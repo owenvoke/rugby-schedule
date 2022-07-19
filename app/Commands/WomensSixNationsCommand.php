@@ -27,13 +27,13 @@ class WomensSixNationsCommand extends ScheduleCommand
     private function getTeamFromOption(): string
     {
         return match (strtolower($this->argument('team'))) {
-            'england'  => '1790',
-            'ireland'  => '1791',
+            'england' => '1790',
+            'ireland' => '1791',
             'scotland' => '1792',
-            'france'   => '1805',
-            'italy'    => '1839',
-            'wales'    => '3007',
-            default    => '',
+            'france' => '1805',
+            'italy' => '1839',
+            'wales' => '3007',
+            default => '',
         };
     }
 }

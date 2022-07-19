@@ -27,7 +27,7 @@ class PremiershipCommand extends ScheduleCommand
     private function getTeamFromOption(): string
     {
         return match (strtolower($this->argument('team'))) {
-            'bath'       => '1',
+            'bath' => '1',
             'gloucester' => '2',
             'leicester', 'tigers' => '4',
             'london-irish', 'london irish' => '5',
