@@ -3,7 +3,7 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-github-actions]][link-github-actions]
-[![Style CI][ico-styleci]][link-styleci]
+[![Static Analysis][ico-static-analysis]][link-static-analysis]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Buy us a tree][ico-treeware-gifting]][link-treeware-gifting]
 
@@ -93,13 +93,13 @@ Read more about Treeware at [treeware.earth][link-treeware].
 [ico-version]: https://img.shields.io/packagist/v/owenvoke/rugby-schedule.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-github-actions]: https://img.shields.io/github/workflow/status/owenvoke/rugby-schedule/Static%20Analysis.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/471038401/shield
+[ico-static-analysis]: https://img.shields.io/github/workflow/status/owenvoke/rugby-schedule/Static%20Analysis.svg?style=flat-square&label=Static%20Analysis
 [ico-downloads]: https://img.shields.io/packagist/dt/owenvoke/rugby-schedule.svg?style=flat-square
 [ico-treeware-gifting]: https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/owenvoke/rugby-schedule
 [link-github-actions]: https://github.com/owenvoke/rugby-schedule/actions
-[link-styleci]: https://styleci.io/repos/471038401
+[link-static-analysis]: https://github.com/owenvoke/rugby-schedule/actions
 [link-downloads]: https://packagist.org/packages/owenvoke/rugby-schedule
 [link-treeware]: https://treeware.earth
 [link-treeware-gifting]: https://ecologi.com/owenvoke?gift-trees
