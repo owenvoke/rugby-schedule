@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.5.0 - 2022-09-12](https://github.com/owenvoke/rugby-schedule/compare/v1.4.1...v1.5.0)
+
+### Added
+- Add U18s Premiership command ([1ae5e30](https://github.com/owenvoke/rugby-schedule/commit/1ae5e3049d5258e0be4f62bf9f0ea0987e262a55))
+- Add Autumn Nations Series command ([1ae5e30](https://github.com/owenvoke/rugby-schedule/commit/1ae5e3049d5258e0be4f62bf9f0ea0987e262a55))
+
+### Changed
+- Disabled U20s Six Nations command until a new schedule is available ([1ae5e30](https://github.com/owenvoke/rugby-schedule/commit/1ae5e3049d5258e0be4f62bf9f0ea0987e262a55))
+
+### Fixed
+- Disable invalid links from being displayed ([a600bce](https://github.com/owenvoke/rugby-schedule/commit/a600bce1d42265ee91dda8986c37712c1a54d1f0))
+
 ## [v1.4.1 - 2022-07-19](https://github.com/owenvoke/rugby-schedule/compare/v1.4.0...v1.4.1)
 
 ### Changed
