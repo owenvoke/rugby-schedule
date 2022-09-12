@@ -17,6 +17,6 @@ class PremiershipCupCommand extends ScheduleCommand
 
     protected function getFeedUrl(): string
     {
-        return 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4322&source=sfms&project=edfcup&TeamId=';
+        return 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4387&source=sfms&project=premier&TeamId=';
     }
 }

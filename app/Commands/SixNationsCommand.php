@@ -19,7 +19,7 @@ class SixNationsCommand extends ScheduleCommand
     protected function getFeedUrl(): string
     {
         return sprintf(
-            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4294&source=sfms&project=sixnations&TeamId=%s',
+            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4360&source=sfms&project=sixnations&TeamId=%s',
             $this->getTeamFromOption()
         );
     }

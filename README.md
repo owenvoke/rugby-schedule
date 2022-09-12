@@ -37,9 +37,13 @@ The following tournament commands are available:
 
 - `womens:six-nations` - [Women's Six Nations](https://womens.sixnationsrugby.com)
 
+#### Under-18s Rugby
+
+- `u18s:premiership` - [Premiership Rugby Under-18s Academy League](https://premiershiprugby.com/under-18-academy-league)
+
 #### Under-20s Rugby
 
-- `u20s:six-nations` - [Under-20 Six Nations](https://u20.sixnationsrugby.com)
+- `u20s:six-nations` - [Under-20s Six Nations](https://u20.sixnationsrugby.com)
 
 See the output of `rugby-schedule` for all available commands and their usage, or use `--help` to display extended usage information for a specific command.
 

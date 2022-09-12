@@ -10,6 +10,11 @@ class U20sSixNationsCommand extends ScheduleCommand
     protected $signature = 'u20s:six-nations {--p|include-past : Include past events}
                                              {--c|include-calendar-links : Include calendar links}';
 
+    public function handle(): void
+    {
+        $this->components->info('This command has been disabled until a new fixture schedule is available.');
+    }
+
     protected function getFeedName(): string
     {
         return 'Under-20s Six Nations';

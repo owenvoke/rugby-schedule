@@ -17,6 +17,6 @@ class EuropeanChallengeCommand extends ScheduleCommand
 
     protected function getFeedUrl(): string
     {
-        return 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4303&source=erc&project=epcr&TeamId=';
+        return 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=421&source=erc&project=epcr&TeamId=';
     }
 }

@@ -19,7 +19,7 @@ class WomensSixNationsCommand extends ScheduleCommand
     protected function getFeedUrl(): string
     {
         return sprintf(
-            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4339&source=sfms&project=sixnations&TeamId=%s',
+            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4392&source=sfms&project=sixnations&TeamId=%s',
             $this->getTeamFromOption()
         );
     }
