@@ -27,6 +27,7 @@ The following tournament commands are available:
 
 #### Men's Rugby
 
+- `autumn-nations` - [The Autumn Nations Series](https://autumnnationsseries.com)
 - `european-challenge` - [The European Challenge Cup](https://epcrugby.com/challenge-cup)
 - `european-champions` - [The European Champions Cup](https://epcrugby.com)
 - `premiership` - [The Gallagher Premiership](https://premiershiprugby.com/gallagher-premiership)
