@@ -8,13 +8,13 @@
         "php": "^8.0"
     },
     "require-dev": {
-        "guzzlehttp/guzzle": "^7.4.2",
-        "illuminate/view": "^9.11",
-        "laravel-zero/framework": "^9.1",
-        "nunomaduro/larastan": "^2.1",
-        "nunomaduro/termwind": "^1.9",
-        "sabre/vobject": "^4.4",
-        "spatie/calendar-links": "^1.7"
+        "guzzlehttp/guzzle": "^7.5",
+        "illuminate/view": "^9.29",
+        "laravel-zero/framework": "^9.1.3",
+        "nunomaduro/larastan": "^2.2",
+        "nunomaduro/termwind": "^1.14",
+        "sabre/vobject": "^4.5",
+        "spatie/calendar-links": "^1.8"
     },
     "autoload": {
         "psr-4": {
@@ -36,6 +36,9 @@
         "optimize-autoloader": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
+        },
+        "platform": {
+            "php": "8.0.2"
         }
     },
     "minimum-stability": "dev",
