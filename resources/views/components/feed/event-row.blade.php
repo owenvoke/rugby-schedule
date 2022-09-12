@@ -6,7 +6,7 @@
 ])
 <tr>
     <td>
-        <a class="{{ $event->startDate->isToday() ? 'text-green-500 font-bold' : null }}" href="{{ $event->url }}">{{ $event->summary }}</a>
+        <a class="{{ $event->startDate->isToday() ? 'text-green-500 font-bold' : null }}" href="{{ str($event->url)->whenStartsWith('overview/', fn () => '') }}">{{ $event->summary }}</a>
     </td>
     <td>
         <span>{{ $event->location }}</span>
