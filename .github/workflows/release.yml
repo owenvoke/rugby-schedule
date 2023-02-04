@@ -28,7 +28,9 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: owenvoke/rugby-schedule
+          images: |
+            owenvoke/rugby-schedule
+            ghcr.io/owenvoke/rugby-schedule
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}
