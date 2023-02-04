@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.7.0 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.6.0...v1.7.0))
+
+### Added
+- Add Docker support ([#12](https://github.com/owenvoke/rugby-schedule/pull/12))
+
 ## [v1.6.0 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.5.0...v1.6.0)
 
 ### Changed
