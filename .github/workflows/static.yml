@@ -54,7 +54,9 @@ jobs:
         coverage: none
 
     - name: Install Dependencies
-      run: composer update --${{ matrix.dependency-version }} --no-interaction --prefer-dist --no-progress --ansi
+      run: |
+          composer install --no-interaction --prefer-dist --ansi
+          composer require --no-interaction --dev nunomaduro/larastan --ansi
 
     - name: Run PHPStan
       run: vendor/bin/phpstan analyse --no-progress --ansi
