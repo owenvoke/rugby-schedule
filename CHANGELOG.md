@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.6.0 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.5.0...v1.6.0)
+
+### Changed
+- Update U20s Six Nations calendar ([d1e4ac1](https://github.com/owenvoke/rugby-schedule/pull/11/commits/d1e4ac1e688e0da1fa945e9d0621a78042996ab3))
+
+### Removed
+- Drop support for PHP 8.0 ([d76b7b1](https://github.com/owenvoke/rugby-schedule/pull/11/commits/d76b7b19fc73a3dd6c66d97c0ae9bfdeb9fab24e))
+
 ## [v1.5.0 - 2022-09-12](https://github.com/owenvoke/rugby-schedule/compare/v1.4.1...v1.5.0)
 
 ### Added
