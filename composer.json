@@ -5,7 +5,7 @@
     "license": "MIT",
     "bin": "builds/rugby-schedule",
     "require": {
-        "php": "^8.0"
+        "php": "^8.1"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^7.5",
@@ -38,7 +38,7 @@
             "pestphp/pest-plugin": true
         },
         "platform": {
-            "php": "8.0.2"
+            "php": "8.1"
         }
     },
     "minimum-stability": "dev",
