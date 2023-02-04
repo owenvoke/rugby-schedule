@@ -18,6 +18,12 @@ Via Composer
 composer global require owenvoke/rugby-schedule
 ```
 
+Via Docker
+
+```shell
+docker run ghcr.io/owenvoke/rugby-schedule:latest
+```
+
 ## Usage
 
 ### Tournaments
