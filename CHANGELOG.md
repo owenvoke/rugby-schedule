@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.7.2 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.1...v1.7.2))
+
+### Fixed
+- Resolve Docker prefix
+
 ## [v1.7.1 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.0...v1.7.1))
 
 ### Fixed
