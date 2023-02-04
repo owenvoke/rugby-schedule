@@ -57,8 +57,6 @@ return [
     */
 
     'hidden' => [
-        App\Commands\U20sSixNationsCommand::class,
-
         Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         Illuminate\Console\Scheduling\ScheduleListCommand::class,
         Illuminate\Console\Scheduling\ScheduleFinishCommand::class,
