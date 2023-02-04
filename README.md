@@ -21,7 +21,7 @@ composer global require owenvoke/rugby-schedule
 Via Docker
 
 ```shell
-docker run ghcr.io/owenvoke/rugby-schedule:latest
+docker run --rm ghcr.io/owenvoke/rugby-schedule:latest
 ```
 
 ## Usage
