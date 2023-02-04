@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.7.4 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.3...v1.7.4))
+
+### Added
+- Nothing
+
 ## [v1.7.3 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.2...v1.7.3))
 
 ### Added
