@@ -6,32 +6,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
-## [v1.7.5 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.4...v1.7.5))
+## [v1.7.5 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.4...v1.7.5)
 
 ### Added
 - Add multi-arch support for Docker
 
-## [v1.7.4 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.3...v1.7.4))
+## [v1.7.4 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.3...v1.7.4)
 
 ### Added
 - Nothing
 
-## [v1.7.3 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.2...v1.7.3))
+## [v1.7.3 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.2...v1.7.3)
 
 ### Added
 - Nothing
 
-## [v1.7.2 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.1...v1.7.2))
+## [v1.7.2 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.1...v1.7.2)
 
 ### Fixed
 - Resolve Docker prefix
 
-## [v1.7.1 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.0...v1.7.1))
+## [v1.7.1 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.0...v1.7.1)
 
 ### Fixed
 - Resolve permissions for Docker release ([7da1a32](https://github.com/owenvoke/rugby-schedule/commit/7da1a325e8c9b2f2d6d04b26c2764abda86d3396))
 
-## [v1.7.0 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.6.0...v1.7.0))
+## [v1.7.0 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.6.0...v1.7.0)
 
 ### Added
 - Add Docker support ([#12](https://github.com/owenvoke/rugby-schedule/pull/12))
