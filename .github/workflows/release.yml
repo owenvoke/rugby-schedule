@@ -9,16 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Build
-    permissions:
-      contents: read
-      packages: write
     steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: owenvoke
+          username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Extract metadata (tags, labels) for Docker
