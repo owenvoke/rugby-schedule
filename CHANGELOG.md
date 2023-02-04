@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.7.5 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.4...v1.7.5))
+
+### Added
+- Add multi-arch support for Docker
+
 ## [v1.7.4 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.3...v1.7.4))
 
 ### Added
