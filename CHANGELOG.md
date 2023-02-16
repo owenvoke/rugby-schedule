@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.8.0 - 2023-02-16](https://github.com/owenvoke/rugby-schedule/compare/v1.7.5...v1.8.0)
+
+### Changed
+- Update to Laravel Zero 10.x
+
 ## [v1.7.5 - 2023-02-04](https://github.com/owenvoke/rugby-schedule/compare/v1.7.4...v1.7.5)
 
 ### Added
