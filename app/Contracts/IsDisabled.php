@@ -6,5 +6,4 @@ namespace App\Contracts;
 
 interface IsDisabled
 {
-    public function disabled(): void;
 }

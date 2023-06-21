@@ -11,7 +11,7 @@ use App\Enums\Competition;
 class SixNationsCommand extends ScheduleCommand implements HasTeams
 {
     /** {@inheritdoc} */
-    protected $signature = 'six-nations {team? : An optional team name}
+    protected $signature = 'six-nations {--t|team= : Filter matches for a specific team}
                                         {--p|include-past : Include past events}
                                         {--c|include-calendar-links : Include calendar links}';
 

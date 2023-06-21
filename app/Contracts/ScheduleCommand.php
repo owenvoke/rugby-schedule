@@ -20,9 +20,11 @@ abstract class ScheduleCommand extends Command
     public function handle(): int
     {
         if ($this instanceof IsDisabled) {
-            $this->disabled();
+            return $this->disabled();
+        }
 
-            return self::INVALID;
+        if ($this->option('team') && ! $this instanceof HasTeams) {
+            return $this->doesNotSupportTeams();
         }
 
         /** @var bool $includePast */
@@ -72,7 +74,7 @@ abstract class ScheduleCommand extends Command
             return null;
         }
 
-        if (! $team = $this->argument('team')) {
+        if (! $team = $this->option('team')) {
             return '';
         }
 
@@ -81,8 +83,20 @@ abstract class ScheduleCommand extends Command
         );
     }
 
-    public function disabled(): void
+    protected function disabled(): int
     {
-        $this->components->info('This command has been disabled until a new fixture schedule is available.');
+        render(view('error', [
+            'summary' => 'Command Disabled',
+            'message' => 'This command has been disabled until a new fixture schedule is available.',
+        ])->render());
+
+        return self::SUCCESS;
+    }
+
+    protected function doesNotSupportTeams(): int
+    {
+        render(view('notice', ['notice' => 'This command does not support specifying teams.'])->render());
+
+        return self::INVALID;
     }
 }

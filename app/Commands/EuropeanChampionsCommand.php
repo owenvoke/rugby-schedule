@@ -10,7 +10,7 @@ use App\Enums\Competition;
 class EuropeanChampionsCommand extends ScheduleCommand
 {
     /** {@inheritdoc} */
-    protected $signature = 'european-champions {team? : An optional team name}
+    protected $signature = 'european-champions {--t|team= : Filter matches for a specific team}
                                                {--p|include-past : Include past events}
                                                {--c|include-calendar-links : Include calendar links}';
 

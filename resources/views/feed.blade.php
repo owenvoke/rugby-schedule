@@ -4,7 +4,7 @@
     /** @var bool $supportsTerminalHyperlinks */
 @endphp
 
-<div class="ml-2 my-1">
+<x-layouts.app>
     <dl class="pb-1">
         <dt>{{ config('app.name') }} - {{ $feedName }}</dt>
     </dl>
@@ -19,4 +19,4 @@
     @else
         <div class="w-full text-yellow">No events were found for the specified schedule.</div>
     @endif
-</div>
+</x-layouts.app>

@@ -10,7 +10,7 @@ use App\Enums\Competition;
 class U20sSixNationsCommand extends ScheduleCommand
 {
     /** {@inheritdoc} */
-    protected $signature = 'u20s:six-nations {team? : An optional team name}
+    protected $signature = 'u20s:six-nations {--t|team= : Filter matches for a specific team}
                                              {--p|include-past : Include past events}
                                              {--c|include-calendar-links : Include calendar links}';
 

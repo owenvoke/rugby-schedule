@@ -53,6 +53,12 @@ The following tournament commands are available:
 
 See the output of `rugby-schedule` for all available commands and their usage, or use `--help` to display extended usage information for a specific command.
 
+### Viewing Matches for a Specific Team
+
+The `--team` (or `-t`) flag can be used to filter to a specific team (e.g. `--team england`).
+
+This flag is available on all commands, however it may not be supported on all competitions.
+
 ### Viewing Calendar Links
 
 You can view available calendar links (e.g. Google Calendar, Outlook Calendar) that allow you to add an event to your calendar.

@@ -11,7 +11,7 @@ use App\Enums\Competition;
 class PremiershipCommand extends ScheduleCommand implements HasTeams
 {
     /** {@inheritdoc} */
-    protected $signature = 'premiership {team? : An optional team name}
+    protected $signature = 'premiership {--t|team= : Filter matches for a specific team}
                                         {--p|include-past : Include past events}
                                         {--c|include-calendar-links : Include calendar links}';
 
