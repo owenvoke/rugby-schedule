@@ -6,7 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
-## [v1.9.0 - 2023-02-16](https://github.com/owenvoke/rugby-schedule/compare/v1.8.0...v1.9.0)
+## [v1.10.0 - 2023-06-21](https://github.com/owenvoke/rugby-schedule/compare/v1.9.0...v1.10.0)
+
+### Changed
+- Use `--team` / `-t` flag for teams ([#17](https://github.com/owenvoke/rugby-schedule/pull/17))
+- Display notice when teams are not supported ([#17](https://github.com/owenvoke/rugby-schedule/pull/17))
+
+## [v1.9.0 - 2023-06-21](https://github.com/owenvoke/rugby-schedule/compare/v1.8.0...v1.9.0)
 
 ### Changed
 - Refactor and improve development flow ([#16](https://github.com/owenvoke/rugby-schedule/pull/16))
