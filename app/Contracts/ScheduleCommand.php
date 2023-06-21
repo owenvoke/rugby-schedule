@@ -68,6 +68,10 @@ abstract class ScheduleCommand extends Command
 
     public function getTeam(): string|null
     {
+        if (! $this instanceof HasTeams) {
+            return null;
+        }
+
         if (! $team = $this->argument('team')) {
             return '';
         }
