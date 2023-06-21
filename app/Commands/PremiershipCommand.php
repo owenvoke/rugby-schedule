@@ -26,8 +26,6 @@ class PremiershipCommand extends ScheduleCommand implements HasTeams
             'bath' => '1',
             'gloucester' => '2',
             'leicester', 'tigers' => '4',
-            'london-irish', 'london irish' => '5',
-            'wasps' => '6',
             'harlequins', 'quins' => '7',
             'newcastle', 'falcons' => '8',
             'northampton', 'saints' => '9',
@@ -35,7 +33,6 @@ class PremiershipCommand extends ScheduleCommand implements HasTeams
             'sale', 'sharks' => '12',
             'bristol', 'bears' => '25',
             'exeter', 'chiefs' => '48',
-            'worcester', 'warriors' => '57',
             default => null,
         };
     }
