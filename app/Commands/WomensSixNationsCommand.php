@@ -1,30 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Commands;
 
+use App\Contracts\HasTeams;
 use App\Contracts\ScheduleCommand;
+use App\Enums\Competition;
 
-class WomensSixNationsCommand extends ScheduleCommand
+class WomensSixNationsCommand extends ScheduleCommand implements HasTeams
 {
     /** {@inheritdoc} */
     protected $signature = 'womens:six-nations {team? : An optional team name}
                                         {--p|include-past : Include past events}
                                         {--c|include-calendar-links : Include calendar links}';
 
-    protected function getFeedName(): string
+    protected function getCompetition(): Competition
     {
-        return 'Women\'s Six Nations';
+        return Competition::WomensSixNations;
     }
 
-    protected function getFeedUrl(): string
-    {
-        return sprintf(
-            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4392&source=sfms&project=sixnations&TeamId=%s',
-            $this->getTeamFromOption()
-        );
-    }
-
-    private function getTeamFromOption(): string
+    public function getTeam(): string|null
     {
         return match (strtolower($this->argument('team'))) {
             'england' => '1790',
@@ -33,7 +29,7 @@ class WomensSixNationsCommand extends ScheduleCommand
             'france' => '1805',
             'italy' => '1839',
             'wales' => '3007',
-            default => '',
+            default => null,
         };
     }
 }

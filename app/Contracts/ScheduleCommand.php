@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Contracts;
 
 use App\DTOs\Event;
+use App\Enums\Competition;
+use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
 use LaravelZero\Framework\Commands\Command;
@@ -14,12 +16,18 @@ use function Termwind\render;
 
 abstract class ScheduleCommand extends Command
 {
-    public function handle(): void
+    public function handle(): int
     {
+        if ($this instanceof IsDisabled) {
+            $this->disabled();
+
+            return self::INVALID;
+        }
+
         /** @var bool $includePast */
         $includePast = $this->option('include-past') ?: false;
         $feed = Reader::read(Http::get($this->getFeedUrl())->body(), MimeDir::OPTION_IGNORE_INVALID_LINES);
-        $feedName = $this->getFeedName();
+        $feedName = $this->getCompetition()->name();
         $includeCalendarLinks = supports_terminal_hyperlinks() && $this->option('include-calendar-links') === true;
 
         $events = new Collection();
@@ -35,18 +43,29 @@ abstract class ScheduleCommand extends Command
         }
 
         render(view('feed', compact('events', 'feedName', 'includeCalendarLinks'))->render());
+
+        return self::SUCCESS;
     }
+
+    abstract protected function getCompetition(): Competition;
 
     public function getDescription(): string
     {
-        return "View the {$this->getFeedName()} schedule";
+        return "View the {$this->getCompetition()->name()} schedule";
     }
 
-    abstract protected function getFeedUrl(): string;
+    protected function getFeedUrl(): string
+    {
+        $url = $this->app[Repository::class]->get(sprintf('feeds.%s', $this->getCompetition()->value));
 
-    abstract protected function getFeedName(): string;
+        if (! $this instanceof HasTeams) {
+            return $url;
+        }
 
-    protected function disabled(): void
+        return sprintf($url, $this->getTeam());
+    }
+
+    public function disabled(): void
     {
         $this->components->info('This command has been disabled until a new fixture schedule is available.');
     }

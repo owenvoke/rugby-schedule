@@ -1,8 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Commands;
 
 use App\Contracts\ScheduleCommand;
+use App\Enums\Competition;
 
 class EuropeanChampionsCommand extends ScheduleCommand
 {
@@ -10,13 +13,8 @@ class EuropeanChampionsCommand extends ScheduleCommand
     protected $signature = 'european-champions {--p|include-past : Include past events}
                                                {--c|include-calendar-links : Include calendar links}';
 
-    protected function getFeedName(): string
+    protected function getCompetition(): Competition
     {
-        return 'European Champions Cup';
-    }
-
-    protected function getFeedUrl(): string
-    {
-        return 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=420&source=erc&project=epcr&TeamId=';
+        return Competition::EuropeanChampionsCup;
     }
 }

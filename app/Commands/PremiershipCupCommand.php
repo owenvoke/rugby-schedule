@@ -1,8 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Commands;
 
 use App\Contracts\ScheduleCommand;
+use App\Enums\Competition;
 
 class PremiershipCupCommand extends ScheduleCommand
 {
@@ -10,13 +13,8 @@ class PremiershipCupCommand extends ScheduleCommand
     protected $signature = 'premiership-cup {--p|include-past : Include past events}
                                             {--c|include-calendar-links : Include calendar links}';
 
-    protected function getFeedName(): string
+    protected function getCompetition(): Competition
     {
-        return 'Gallagher Premiership Cup';
-    }
-
-    protected function getFeedUrl(): string
-    {
-        return 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4387&source=sfms&project=premier&TeamId=';
+        return Competition::PremiershipCup;
     }
 }

@@ -1,30 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Commands;
 
+use App\Contracts\HasTeams;
 use App\Contracts\ScheduleCommand;
+use App\Enums\Competition;
 
-class SixNationsCommand extends ScheduleCommand
+class SixNationsCommand extends ScheduleCommand implements HasTeams
 {
     /** {@inheritdoc} */
     protected $signature = 'six-nations {team? : An optional team name}
                                         {--p|include-past : Include past events}
                                         {--c|include-calendar-links : Include calendar links}';
 
-    protected function getFeedName(): string
+    protected function getCompetition(): Competition
     {
-        return 'Six Nations';
+        return Competition::SixNations;
     }
 
-    protected function getFeedUrl(): string
-    {
-        return sprintf(
-            'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4360&source=sfms&project=sixnations&TeamId=%s',
-            $this->getTeamFromOption()
-        );
-    }
-
-    private function getTeamFromOption(): string
+    public function getTeam(): string|null
     {
         return match (strtolower($this->argument('team'))) {
             'england' => '125',
@@ -33,7 +29,7 @@ class SixNationsCommand extends ScheduleCommand
             'wales' => '128',
             'france' => '129',
             'italy' => '130',
-            default => '',
+            default => null,
         };
     }
 }

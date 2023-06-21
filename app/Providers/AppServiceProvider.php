@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Artisan;
@@ -8,27 +10,12 @@ use Symfony\Component\Console\Command\Command;
 
 class AppServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
+    public function boot(): void
     {
         collect(Artisan::all())->each(function (Command $command) {
             if (in_array($command::class, config('commands.hidden', []), true)) {
                 $command->setHidden(true);
             }
         });
-    }
-
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
     }
 }
