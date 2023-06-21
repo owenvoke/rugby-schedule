@@ -20,9 +20,9 @@ class SixNationsCommand extends ScheduleCommand implements HasTeams
         return Competition::SixNations;
     }
 
-    public function getTeam(): string|null
+    public function mapTeams(string $identifier): string|null
     {
-        return match (strtolower($this->argument('team'))) {
+        return match ($identifier) {
             'england' => '125',
             'ireland' => '126',
             'scotland' => '127',

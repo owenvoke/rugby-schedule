@@ -9,6 +9,7 @@ use App\Enums\Competition;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 use LaravelZero\Framework\Commands\Command;
 use Sabre\VObject\Parser\MimeDir;
 use Sabre\VObject\Reader;
@@ -58,11 +59,22 @@ abstract class ScheduleCommand extends Command
     {
         $url = $this->app[Repository::class]->get(sprintf('feeds.%s', $this->getCompetition()->value));
 
-        if (! $this instanceof HasTeams) {
-            return $url;
+        if ($this instanceof HasTeams) {
+            $url = str_replace('{{team}}', $this->getTeam(), $url);
         }
 
-        return sprintf($url, $this->getTeam());
+        return $url;
+    }
+
+    public function getTeam(): string|null
+    {
+        if (! $team = $this->argument('team')) {
+            return '';
+        }
+
+        return (string) $this->mapTeams(
+            (string) Str::of($team)->lower(),
+        );
     }
 
     public function disabled(): void

@@ -20,9 +20,9 @@ class PremiershipCommand extends ScheduleCommand implements HasTeams
         return Competition::Premiership;
     }
 
-    public function getTeam(): string|null
+    public function mapTeams(string $identifier): string|null
     {
-        return match (strtolower($this->argument('team'))) {
+        return match ($identifier) {
             'bath' => '1',
             'gloucester' => '2',
             'leicester', 'tigers' => '4',

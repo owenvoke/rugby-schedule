@@ -6,5 +6,5 @@ namespace App\Contracts;
 
 interface HasTeams
 {
-    public function getTeam(): string|null;
+    public function mapTeams(string $identifier): string|null;
 }
