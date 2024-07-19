@@ -10,7 +10,7 @@
 
 ## Install
 
-> Requires PHP 8.1 or later
+> Requires PHP 8.2 or later
 
 Via Composer
 
