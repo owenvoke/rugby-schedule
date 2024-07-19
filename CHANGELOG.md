@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.11.0 - 2024-07-19](https://github.com/owenvoke/rugby-schedule/compare/v1.10.0...v1.11.0)
+
+### Added
+- Add British & Irish Lions Tour ([#19](https://github.com/owenvoke/rugby-schedule/pull/19))
+
+### Changed
+- Update to Laravel Zero 11 ([#18](https://github.com/owenvoke/rugby-schedule/pull/18))
+- Update feed URLs ([#19](https://github.com/owenvoke/rugby-schedule/pull/19))
+
 ## [v1.10.0 - 2023-06-21](https://github.com/owenvoke/rugby-schedule/compare/v1.9.0...v1.10.0)
 
 ### Changed
