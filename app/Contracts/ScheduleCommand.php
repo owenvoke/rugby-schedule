@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 use LaravelZero\Framework\Commands\Command;
 use Sabre\VObject\Parser\MimeDir;
 use Sabre\VObject\Reader;
+
 use function Termwind\render;
 
 abstract class ScheduleCommand extends Command
@@ -68,7 +69,7 @@ abstract class ScheduleCommand extends Command
         return $url;
     }
 
-    public function getTeam(): string|null
+    public function getTeam(): ?string
     {
         if (! $this instanceof HasTeams) {
             return null;

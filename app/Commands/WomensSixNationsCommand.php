@@ -20,7 +20,7 @@ class WomensSixNationsCommand extends ScheduleCommand implements HasTeams
         return Competition::WomensSixNations;
     }
 
-    public function mapTeams(string $identifier): string|null
+    public function mapTeams(string $identifier): ?string
     {
         return match ($identifier) {
             'england' => '1790',

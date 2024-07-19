@@ -16,8 +16,7 @@ final class Event
         public string $location,
         public Carbon $startDate,
         public Carbon $endDate,
-    ) {
-    }
+    ) {}
 
     public static function fromVEvent(VEvent $event): self
     {

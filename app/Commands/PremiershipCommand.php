@@ -20,7 +20,7 @@ class PremiershipCommand extends ScheduleCommand implements HasTeams
         return Competition::Premiership;
     }
 
-    public function mapTeams(string $identifier): string|null
+    public function mapTeams(string $identifier): ?string
     {
         return match ($identifier) {
             'bath' => '1',
