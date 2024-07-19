@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.12.0 - 2024-07-19](https://github.com/owenvoke/rugby-schedule/compare/v1.11.0...v1.12.0)
+
+### Added
+- Add United Rugby Championship ([#20](https://github.com/owenvoke/rugby-schedule/pull/20))
+
 ## [v1.11.0 - 2024-07-19](https://github.com/owenvoke/rugby-schedule/compare/v1.10.0...v1.11.0)
 
 ### Added
