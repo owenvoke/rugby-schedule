@@ -15,6 +15,7 @@ enum Competition: string
     case SixNations = 'six-nations';
     case U18sPremiership = 'u18s:premiership';
     case U20sSixNations = 'u20s:six-nations';
+    case UnitedRugbyChampionship = 'united-rugby-championship';
     case WomensSixNations = 'womens:six-nations';
 
     public function name(): string
@@ -29,6 +30,7 @@ enum Competition: string
             self::SixNations => 'Six Nations',
             self::U18sPremiership => 'Premiership Rugby Under-18s Academy League',
             self::U20sSixNations => 'Under-20s Six Nations',
+            self::UnitedRugbyChampionship => 'United Rugby Championship',
             self::WomensSixNations => 'Women\'s Six Nations',
         };
     }

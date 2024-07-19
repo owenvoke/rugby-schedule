@@ -39,6 +39,7 @@ The following tournament commands are available:
 - `premiership` - [The Gallagher Premiership](https://premiershiprugby.com/gallagher-premiership)
 - `premiership-cup` - [The Gallagher Premiership Cup](https://premiershiprugby.com/premiership-rugby-cup)
 - `six-nations` - [Six Nations](https://sixnationsrugby.com)
+- `united-rugby-championship` - [United Rugby Championship](https://www.unitedrugby.com)
 
 #### Women's Rugby
 

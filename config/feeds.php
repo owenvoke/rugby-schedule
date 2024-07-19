@@ -13,6 +13,7 @@ return [
     Competition::Premiership->value => 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4370&source=sfms&project=premier&TeamId={{team}}',
     Competition::PremiershipCup->value => 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4387&source=sfms&project=premier&TeamId=',
     Competition::SixNations->value => 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4537&source=sfms&project=sixnations&TeamId={{team}}',
+    Competition::UnitedRugbyChampionship->value => 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4528&source=celtic&project=celtic&TeamId=',
     Competition::U18sPremiership->value => 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4390&source=sfms&project=premier&TeamId=',
     Competition::U20sSixNations->value => 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4539&source=sfms&project=sixnations&TeamId=',
     Competition::WomensSixNations->value => 'https://cdn.soticservers.net/tools/wordpress/ical/calendar.php?CompId=4538&source=sfms&project=sixnations&TeamId={{team}}',
