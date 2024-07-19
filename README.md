@@ -35,6 +35,7 @@ The following tournament commands are available:
 - `autumn-nations` - [The Autumn Nations Series](https://autumnnationsseries.com)
 - `european-challenge` - [The European Challenge Cup](https://epcrugby.com/challenge-cup)
 - `european-champions` - [The European Champions Cup](https://epcrugby.com)
+- `lions` - [The British & Irish Lions Tour](https://www.lionsrugby.com)
 - `premiership` - [The Gallagher Premiership](https://premiershiprugby.com/gallagher-premiership)
 - `premiership-cup` - [The Gallagher Premiership Cup](https://premiershiprugby.com/premiership-rugby-cup)
 - `six-nations` - [Six Nations](https://sixnationsrugby.com)
