@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.12.1 - 2024-10-10](https://github.com/owenvoke/rugby-schedule/compare/v1.12.0...v1.12.1)
+
+### Changed
+- Move feed URLs from config to enum ([#22](https://github.com/owenvoke/rugby-schedule/pull/22))
+
 ## [v1.12.0 - 2024-07-19](https://github.com/owenvoke/rugby-schedule/compare/v1.11.0...v1.12.0)
 
 ### Added
