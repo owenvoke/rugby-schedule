@@ -60,7 +60,7 @@ abstract class ScheduleCommand extends Command
 
     protected function getFeedUrl(): string
     {
-        $url = $this->app[Repository::class]->get(sprintf('feeds.%s', $this->getCompetition()->value));
+        $url = $this->getCompetition()->feedUrl();
 
         if ($this instanceof HasTeams) {
             $url = str_replace('{{team}}', $this->getTeam(), $url);
