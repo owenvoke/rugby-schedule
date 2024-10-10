@@ -6,7 +6,6 @@ namespace App\Contracts;
 
 use App\DTOs\Event;
 use App\Enums\Competition;
-use Illuminate\Contracts\Config\Repository;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
@@ -34,7 +33,7 @@ abstract class ScheduleCommand extends Command
         $feedName = $this->getCompetition()->name();
         $includeCalendarLinks = supports_terminal_hyperlinks() && $this->option('include-calendar-links') === true;
 
-        $events = new Collection();
+        $events = new Collection;
 
         foreach ($feed->VEVENT ?? [] as $event) {
             $events->push(Event::fromVEvent($event));
