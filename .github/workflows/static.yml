@@ -52,7 +52,7 @@ jobs:
     - name: Install Dependencies
       run: |
           composer install --no-interaction --prefer-dist --ansi
-          composer require --no-interaction --dev nunomaduro/larastan --ansi
+          composer require --no-interaction --dev larastan/larastan --ansi
 
     - name: Run PHPStan
       run: vendor/bin/phpstan analyse --no-progress --ansi
